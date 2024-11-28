@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(45deg, #333 25%, #555 25%, #555 50%, #333 50%, #333 75%, #555 75%, #555);
+    background-size: 200% 200%; /* Make the gradient bigger for smooth movement */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    animation: moveBackground 5s linear infinite; /* Apply the animation */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+main {
+    padding: 20px;
+}
+
+.resize-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.product {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+    width: 200px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Animation to move the background */
+@keyframes moveBackground {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
